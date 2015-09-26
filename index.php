@@ -50,7 +50,7 @@
 		    			
 					
 				    <div class="panel-body">
-				        <img src="img/victor_wooten.jpg" class="tileImage">
+				        <img src="img/Victor_Wooten.jpg" class="tileImage">
 				    </div>
 				</div>
 			</a>
