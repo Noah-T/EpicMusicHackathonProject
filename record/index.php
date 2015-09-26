@@ -12,6 +12,8 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
 <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"></script>
 <script type="text/javascript">
 
+  var mediaRecorder = new MediaStreamRecorder(stream);
+  
   function xhr(url, data, callback) {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -24,7 +26,6 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
   };
 
   function onMediaSuccess(stream) {
-      var mediaRecorder = new MediaStreamRecorder(stream);
       mediaRecorder.mimeType = 'audio/wav';
       mediaRecorder.audioChannels = 1;
       mediaRecorder.ondataavailable = function(blob) {
