@@ -5,8 +5,18 @@ require_once'../dbConn.php';
 $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Could not connect to MySQL: ' . mysqli_connect_error());
 
 //$conn = mysqli_connect ('localhost', 'phpUser', 'songPass', 'songreview') OR die ('Could not connect to MySQL: ' . mysqli_connect_error());
+?>
 
-$sql = "UPDATE submissions SET description='Doe' WHERE submissionId=2";
+<form enctype="multipart/form-data" action="__URL__" method="POST">
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    Send this file: <input name="userfile" type="file" />
+    <input type="submit" value="Send File" />
+</form>
+
+<?php
+
+
+/*$sql = "UPDATE submissions SET description='Doe' WHERE submissionId=2";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
@@ -14,27 +24,21 @@ if ($conn->query($sql) === TRUE) {
     echo "Error updating record: " . $conn->error;
 }
 
+<<<<<<< HEAD
 
 if (isset($_POST['submit']))
 {
+=======
+*/
+>>>>>>> 8f668f2390500743a040158ee93d53ba5e1452db
 	/* Create String for error collection */
-	$error = '';
-
 	/* Check for empty vars */
-	if (empty($_POST['songName'])) {
-		$error = $error . ' Err: songName is a required field';
-	}
-
-	if (empty($_POST['description'])) {
-		$error = $error . ' Err: description is a required field';
-	}
-
-	if (empty($_POST['composer'])) {
-		$error = $error . ' Err: composer is a required field';
-	}
-}
 ?>
+<<<<<<< HEAD
 <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/addons/p5.dom.js'></script>
+=======
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/addons/p5.dom.js'></script>
+>>>>>>> 8f668f2390500743a040158ee93d53ba5e1452db
 
 <script>
 
