@@ -21,7 +21,9 @@ if (isset($_POST['submit'])) {
 		$error = $error . ' Err: composer is a required field';
 	}
 
-	$sha = sha1($_POST['songName']);
+	$sql = "SELECT * from assignments";
+	$result = mysqli_query($db, $sql);
+	$count = mysqli_num_rows($result);
 
 	date_default_timezone_set('America/New_York');
 
@@ -31,12 +33,12 @@ if (isset($_POST['submit'])) {
 
 	if (empty($error)) {
 		/* If no errors, add to the db */
-		$sql = "INSERT INTO assignments (id, songName, filePath, description, composer, date) VALUES ('$sha', '{$_POST['songName']}', '$filePath', '{$_POST['description']}', '{$_POST['composer']}', '$date')";
+		$sql = "INSERT INTO assignments (id, songName, filePath, description, composer, date) VALUES ('$count', '{$_POST['songName']}', '$filePath', '{$_POST['description']}', '{$_POST['composer']}', '$date')";
 		$result = mysqli_query($db, $sql);
 	}
 
 	/* Redirect user to index.php */
-	header("Location: http://45.55.240.148/assignments");
+	header("Location: http://45.55.240.148/assignments?id=" . $count);
 	exit();
 	}
 
@@ -45,7 +47,7 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html lang ="en">
 	<head>
-	<title>LOL HACKATHON</title>
+	<title>kLOL HACKATHON</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css" />
@@ -53,7 +55,7 @@ if (isset($_POST['submit'])) {
 	<body>
 	<article class="container">
 	<h1>New Assignment</h1>
-	<form action="newAssignment.php" method="post">
+	<form action="index.php" method="post">
 		<input type="text" name="songName" value="Song Name">
 		<input type="text" name="description" value="Description">
 		<input type="text" name="composer" value="Composer">

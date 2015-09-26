@@ -28,8 +28,11 @@
     		</div>
     	</div>
     </div>
-    
-    <!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
+   
+<div>
+   <a href="http://tapeswap.hackathonspace.com/assignments/new"><button type="button" class="btn btn-primary pull-right" href="http://tapeswap.hackathonspace.com/assignments/new"> <span class="" aria-hidden="true"></span> New Submission</button></a>
+</div>   
+ <!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
 </div>
 
 <div class="container">

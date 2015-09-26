@@ -18,9 +18,9 @@
     		<div class="col-sm-6">
     		<h4>Recording goes here</h4>
 			<audio controls>
-			  <!--<source src="horse.ogg" type="audio/ogg">
+			  <source src="horse.ogg" type="audio/ogg">
 			  <source src="horse.mp3" type="audio/mpeg">
-			  Your browser does not support the audio tag.-->
+			  Your browser does not support the audio tag.
 			</audio>
     		</div>
     		<div class="col-sm-6">
@@ -28,10 +28,8 @@
     		</div>
     	</div>
     </div>
-   
-    <div class=col-sm-12"> 
-	<a href="http://tapeswap.hackathonspace.com/assignments/new"><button type="button" class="btn btn-primary" href="http://tapeswap.hackathonspace.com/assignments/new"> <span class="" aria-hidden="true"></span> New Submission</button></a>
-    </div>
+    
+	<button type="button" href="/assignments/new">Click Me!</button>    
 <!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
 </div>
 
