@@ -42,7 +42,7 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
           window.open(fileURL);
         });
       };
-      mediaRecorder.start(3000);
+      mediaRecorder.start();
   }
 
   function onMediaError(e) {
