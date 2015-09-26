@@ -30,6 +30,7 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
       mediaRecorder.mimeType = 'audio/wav';
       mediaRecorder.audioChannels = 1;
       mediaRecorder.ondataavailable = function(blob) {
+        console.log("in data available");
         var fileType = 'audio';
         var fileName = 'audio.wav';  // or "wav" or "ogg"
 
