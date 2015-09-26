@@ -7,6 +7,16 @@ error_reporting(-1);
 $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Could not connect to MySQL: ' . mysqli_connect_error());
 
 //$conn = mysqli_connect ('localhost', 'phpUser', 'songPass', 'songreview') OR die ('Could not connect to MySQL: ' . mysqli_connect_error());
+?>
+
+<form enctype="multipart/form-data" action="__URL__" method="POST">
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    Send this file: <input name="userfile" type="file" />
+    <input type="submit" value="Send File" />
+</form>
+
+<?php
+
 
 $sql = "UPDATE submissions SET description='Doe' WHERE submissionId=2";
 
