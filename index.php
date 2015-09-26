@@ -26,6 +26,7 @@
     		<div class="col-sm-6">
     			<p>notes notes notes notes notes notes notes notes notes notes notes notes</p>
     			<div>
+<?php include_once "/assignments/new" ?>
    <a href="http://tapeswap.hackathonspace.com/assignments/new"><button type="button" class="btn btn-primary pull-right" href="http://tapeswap.hackathonspace.com/assignments/new"> <span class="" aria-hidden="true"></span> New Submission</button></a>
 </div>   
     		</div>
