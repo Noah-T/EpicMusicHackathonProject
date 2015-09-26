@@ -12,18 +12,30 @@
 <body>
 	
 	<div class="jumbotron">
-    <h1>Today's Assignment</h1>
+	<div class="row">
+		<div class="col-sm-8">
+			<h1>Today's Assignment</h1>
+		</div>
+		<div class="col-sm-2 col-sm-offset-2">
+    		<img src="img/TapeSwapLogo.png" class="mainLogo">	
+    	</div>
+	</div>
+	
+    
     <div class="container">
     	<div class="row">
+    	
+    	
     		<div class="col-sm-6">
     		<h4>Recording goes here</h4>
 			<audio controls>
-			  <source src="horse.ogg" type="audio/ogg">
-			  <source src="horse.mp3" type="audio/mpeg">
+			  <!-- <source src="horse.ogg" type="audio/ogg">
+			  <source src="horse.mp3" type="audio/mpeg"> -->
 			  Your browser does not support the audio tag.
 			</audio>
     		</div>
     		<div class="col-sm-6">
+    			
     			<p>notes notes notes notes notes notes notes notes notes notes notes notes</p>
     		</div>
     	</div>
