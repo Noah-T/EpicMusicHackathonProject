@@ -20,6 +20,7 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
       }
       request.open('POST', url);
       request.send(data);
+    }
   };
 
   function onMediaSuccess(stream) {
@@ -44,15 +45,12 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
   function onMediaError(e) {
     console.error('media error', e);
   }
-
-  var mediaConstraints = {
-    audio: true
-  };
   function startRecord() {
+    var mediaConstraints = {
+      audio: true
+    };
     navigator.getUserMedia(mediaConstraints, onMediaSuccess, onMediaError);
   }
-
-}
 </script>
 
 <?php
