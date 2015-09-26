@@ -12,7 +12,15 @@
 <body>
 	
 	<div class="jumbotron">
-    <h1>Assignment 1 detail</h1>
+    
+    <div class="row">
+		<div class="col-sm-8">
+	<h1>Assignment 1 detail</h1>
+		</div>
+		<div class="col-sm-2 col-sm-offset-2">
+    		<img src="img/TapeSwapLogo.png" class="mainLogo">	
+    	</div>
+	</div>
     <div class="container">
     	<div class="row">
     		<div class="col-sm-6">
