@@ -6,6 +6,7 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
 
 //$conn = mysqli_connect ('localhost', 'phpUser', 'songPass', 'songreview') OR die ('Could not connect to MySQL: ' . mysqli_connect_error());
 ?>
+
 <button type="button" name="button" onclick="startRecord()">Start Record</button>
 <button type="button" name="button" onclick="mediaRecorder.stop()"></button>
 <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"></script>
