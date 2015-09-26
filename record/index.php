@@ -18,7 +18,7 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
 <?php
 
 
-$sql = "UPDATE submissions SET description='Doe' WHERE submissionId=2";
+/*$sql = "UPDATE submissions SET description='Doe' WHERE submissionId=2";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
@@ -26,28 +26,11 @@ if ($conn->query($sql) === TRUE) {
     echo "Error updating record: " . $conn->error;
 }
 
-
-if (isset($_POST['submit'])) 
-{
+*/
 	/* Create String for error collection */
-	$error = '';
-
 	/* Check for empty vars */
-	if (empty($_POST['songName'])) {
-		$error = $error . ' Err: songName is a required field';
-	}
-
-	if (empty($_POST['description'])) {
-		$error = $error . ' Err: description is a required field';
-	}
-
-	if (empty($_POST['composer'])) {
-		$error = $error . ' Err: composer is a required field';
-	}
-}
 ?>
-<script 
-src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/addons/p5.dom.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/addons/p5.dom.js'></script>
 
 <script>
 
