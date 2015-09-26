@@ -8,7 +8,7 @@ $conn = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Cou
 ?>
 
 <button type="button" name="button" onclick="startRecord()">Start Record</button>
-<button type="button" name="button" onclick="mediaRecorder.stop()"></button>
+<button type="button" name="button" onclick="mediaRecorder.stop()">Stop Record</button>
 <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"></script>
 <script type="text/javascript">
 
