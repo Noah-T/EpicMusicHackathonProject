@@ -16,7 +16,7 @@
     <div class="container">
     	<div class="row">
     		<div class="col-sm-6">
-    		<h4>Recording goes here</h4>
+    		
 			<audio controls>
 			  <source src="horse.ogg" type="audio/ogg">
 			  <source src="./files/Footprints.mp3" type="audio/mpeg">
