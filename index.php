@@ -24,7 +24,7 @@
 			</audio>
     		</div>
     		<div class="col-sm-6">
-    		<p style="size:10px;"> This weeks piece of music is Wayne Shorter's "Footprints."  It is similar to a C minor blues with a few twists and turns in the turnaround.  C minor (aeolian mode) will work over the first 8 bars of the song for improvising.  After that, in bars 9 and 10, you will have emphasize the chord tones of the harmonies but then back to C minor for bars 11 and 13.  Please have a couple of choruses recorded by our next class </p>	
+    		<p class="descriptionText"> This weeks piece of music is Wayne Shorter's "Footprints."  It is similar to a C minor blues with a few twists and turns in the turnaround.  C minor (aeolian mode) will work over the first 8 bars of the song for improvising.  After that, in bars 9 and 10, you will have emphasize the chord tones of the harmonies but then back to C minor for bars 11 and 13.  Please have a couple of choruses recorded by our next class </p>	
 		<div>
 <?php include_once "/assignments/new" ?>
    <a href="http://tapeswap.hackathonspace.com/assignments/new"><button type="button" class="btn btn-primary pull-right" href="http://tapeswap.hackathonspace.com/assignments/new"> <span class="" aria-hidden="true"></span> New Submission</button></a>
