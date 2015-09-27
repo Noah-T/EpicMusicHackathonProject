@@ -33,11 +33,13 @@
     		</div>
     		<div class="col-sm-6">
     			<p>detail notes detail notes detail notes detail notes detail notes detail notes</p>
+<?php include_once "/assignments/new" ?>
+   <a href="http://tapeswap.hackathonspace.com/assignments/new"><button type="button" class="btn btn-primary pull-right" href="http://tapeswap.hackathonspace.com/assignments/new"> <span class="" aria-hidden="true"></span> New Submission</button></a>
+
     		</div>
     	</div>
     </div>
     
-	<button type="button" href="/assignments/new">Click Me!</button>    
 <!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
 </div>
 
