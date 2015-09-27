@@ -19,7 +19,7 @@
     		<h4>Recording goes here</h4>
 			<audio controls>
 			  <source src="horse.ogg" type="audio/ogg">
-			  <source src="horse.mp3" type="audio/mpeg">
+			  <source src="./files/Footprints.mp3" type="audio/mpeg">
 			  Your browser does not support the audio tag.
 			</audio>
     		</div>
